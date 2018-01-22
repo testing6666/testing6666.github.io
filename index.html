@@ -1,0 +1,54 @@
+<html>
+<body>
+
+
+<style>
+form {
+  margin:0 auto;
+  width:300px
+}
+input {
+  margin-bottom:3px;
+  padding:10px;
+  width: 100%;
+  border:1px solid #CCC
+}
+button {
+  padding:10px
+}
+label {
+  cursor:pointer
+}
+
+</style>
+<br><br><br><br><br><br><br><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img src='http://brandcentral.medtronic.com/brand-assets/downloads-tools/Logo/art-logo-cmyk-bl-jpg.jpg' alt="" height='150px' width='400px' align='middle'/>
+
+<br><br><form name="login">
+Username<input type="text" name="userid"/>
+Password<input type="password" name="pswrd"/>
+<input type="button" onclick="check(this.form)" value="Login"/>
+<input type="reset" value="Cancel"/>
+</form>  
+
+<script language="javascript">
+function check(form)/*function to check userid & password*/
+{
+ /*the following code checkes whether the entered userid and password are matching*/
+if(form.userid.value == "myuserid"  && form.pswrd.value == "mypswrd" )
+{
+    window.open('https://formview.io/#/vyflrrezujazofu/homepagev2?header=1')/*opens the target page while Id & password matches*/
+  }
+else if(form.userid.value=='test123' && form.pswrd.value=='test123')
+{
+    window.open('https://formview.io/#/vyflrrezujazofu/homepagev2?header=1')/*opens the target page while Id & password matches*/
+  }
+ else
+ {
+   alert("Error Password or Username")/*displays error message*/
+  }
+}
+</script>
+
+
+</body>
+</html>
